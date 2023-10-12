@@ -1,0 +1,39 @@
+*******************************************************************************
+*       Project: arith                                                        *
+*       Authors: Dhanvi Shivadevuni (sshiva02) & Jack Berg (jberg02)          *
+*       Files: README                                                         *
+*       Date: 3/8/23                                                          *
+*******************************************************************************
+
+Acknowledgements:
+     - Thanks to TA's for helping us with our questions in OH and lab
+        - Thanks to David Hanson for his exception handling help
+
+Implementation:
+        - To the best of our knowledge and from all of our testing, we believe
+                that our programs have been correctly implemented
+
+Architecture: 
+        In order to modularize our program and enhance the compression and 
+        decompression process, we created multiple modules. To note, we have a 
+        structs.h file that contains the structs we use throughout our program. 
+        We were able to modularize our compression program such that each 
+        conversion operation, their inverse, and the required helper functions 
+        were grouped into separate files. We implemented an RGB to Component 
+        Video conversion module. Similarly, we implemented a component video to 
+        discrete cosine and chroma value conversion module. In order to
+        separate the functions that were responsible for the quantization and 
+        dequantization process, we created a quantize module. In order to 
+        account for packing and unpacking codewords which contained the 
+        bitpacking module, we created a pack module. In this project we 
+        attempted to keep each module independent to the best of our ability. 
+Hours Spent:
+        - Analyzing: 20
+        - Solving: 25
+        
+Encountered Problems: 
+Throughout this project, we ran into some errors in regard to bitpacking. We 
+were confused on how to properly create a mask that would allow is to update 
+a specific region within a signed integer. In addition, a big problem we 
+encountered throughout this project was how we made sure each module was 
+relatively independent. 
